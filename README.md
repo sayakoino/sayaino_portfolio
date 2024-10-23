@@ -12,4 +12,4 @@
 
 1. リポジトリをクローンします:
    ```bash
-   git clone https://github.com/sayakoino/my-ml-depression-diagnosis.git
+   git clone https://github.com/sayakoino/sayaino_portolio.git
