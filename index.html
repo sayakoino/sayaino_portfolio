@@ -1,64 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #8FC231; font-family: Arial, sans-serif; }
+        h1, h2 { font-family: Arial, sans-serif; text-align: center; padding: 4.5rem 0 1.5rem; }
+        .navbar { background-color: #000; }
+        .navbar-nav .nav-link { color: #fff; margin-right: 1rem; }
+        .section { padding: 4.5rem 0; text-align: center; }
+        .profile-image { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; }
+        .skills-list { list-style-type: none; padding: 0; }
+        .skills-list li { background-color: #fff; margin: 5px 0; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+        footer { text-align: center; padding: 20px; background-color: #333; color: #fff; }
+    </style>
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header class="header">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#profile">PROFILE</a></li>
-                <li><a href="#skill">SKILLS</a></li>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- サイドバー -->
-    <aside class="sidebar"></aside>
-
-    <main>
-        <div class="content-container">
-            <section id="profile" class="center-content">
-                <img src="profile-pic.jpg" class="profile-image" alt="Profile Picture">
-                <h2>PROFILE</h2>
-                <p>横浜市立大学データサイエンス学部データサイエンス学科に在籍中の大学生です。主に医療分野診断の機械学習モデルの開発に関心があり、特にうつ病診断に関する研究を行っています。</p>
-            </section>
-
-            <section id="skill" class="center-content">
-                <h2>SKILLS</h2>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Data Analysis</li>
-                    <li>Machine Learning</li>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-github"></i> My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#profile">PROFILE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">SKILL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 </ul>
-            </section>
-
-            <section id="works" class="center-content">
-                <h2>WORKS</h2>
-                <ul>
-                    <li><a href="https://github.com/sayaino_portfolio/notebooks/model_training.ipynb">機械学習によるうつ病診断のためのデータ分析</a></li>
-                </ul>
-                <p>このプロジェクトでは、MFCC音声特徴量を用いてうつ病を予測する多層パーセプトロン（MLP）を開発しました。プロジェクトで使用したコードの詳細をJupyter Notebookで確認できます。</p>
-            </section>
-
-            <section id="contact" class="center-content">
-                <h2>CONTACT</h2>
-                <div class="social-icons">
-                    <a href="mailto:sayasi11235@gmail.com"><img src="mail-icon.png" alt="Email"></a>
-                    <a href="https://github.com/sayakoino"><img src="github-icon.png" alt="GitHub"></a>
-                </div>
-            </section>
+            </div>
         </div>
-    </main>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <section id="profile" class="section">
+            <h1>PROFILE</h1>
+            <img src="profile-pic.jpg" class="profile-image" alt="Profile Picture">
+            <p>横浜市立大学データサイエンス学部データサイエンス学科に在籍中の大学生です。主に医療分野診断の機械学習モデルの開発に関心があり、特にうつ病診断に関する研究を行っています。</p>
+        </section>
+
+        <section id="skill" class="section">
+            <h1>SKILL</h1>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Data Analysis</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+
+        <section id="works" class="section">
+            <h1>WORKS</h1>
+            <ul>
+                <li><a href="https://github.com/sayaino_portfolio/notebooks/model_training.ipynb">機械学習によるうつ病診断のためのデータ分析</a></li>
+            </ul>
+            <p>このプロジェクトでは、MFCC音声特徴量を用いてうつ病を予測する多層パーセプトロン（MLP）を開発しました。プロジェクトで使用したコードの詳細をJupyter Notebookで確認できます。</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h1>CONTACT</h1>
+            <div class="social-icons">
+                <a href="mailto:sayasi11235@gmail.com"><img src="mail-icon.png" alt="Email"></a>
+                <a href="https://github.com/sayakoino"><img src="github-icon.png" alt="GitHub"></a>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <p>© 2024 Sayako Inoue</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
