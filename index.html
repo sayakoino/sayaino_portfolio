@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Sayako Inoue</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#profile">プロフィール</a></li>
-            <li><a href="#skills">スキル</a></li>
-            <li><a href="#projects">プロジェクト</a></li>
-            <li><a href="#contact">コンタクト</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <section id="profile" class="center-content">
+            <img src="profile-pic.jpg" class="profile-image">
+            <h2>プロフィール</h2>
+            <p>横浜市立大学データサイエンス学部データサイエンス学科に在籍中の大学生です。主に医療分野診断の機械学習モデルの開発に関心があり、特にうつ病診断に関する研究を行っています。</p>
+        </section>
 
-<main>
-    <section id="profile">
-        <h2>プロフィール</h2>
-        <img src="path/to/profile-icon.png" class="icon"> <!-- アイコン画像 -->
-        <p>横浜市立大学データサイエンス学部データサイエンス学科に在籍中の大学生です。主に医療分野診断の機械学習モデルの開発に関心があり、特にうつ病診断に関する研究を行っています。</p>
-    </section>
+        <section id="skill" class="center-content">
+            <h2>スキル</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Data Analysis</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>スキル</h2>
-        <img src="path/to/skills-icon.png" class="icon"> <!-- アイコン画像 -->
-        <ul class="skills">
-            <li>Python</li>
-            <li>機械学習</li>
-            <li>データ分析</li>
-        </ul>
-    </section>
+        <section id="works" class="center-content">
+            <h2>制作物</h2>
+            <p>このプロジェクトでは、MFCC音声特徴量を用いてうつ病を予測する多層パーセプトロン（MLP）を開発しました。プロジェクトで使用したコードの詳細をJupyter Notebookで確認できます。</p>
+        </section>
 
-    <section id="projects">
-        <h2>プロジェクト</h2>
-        <img src="path/to/projects-icon.png" class="icon"> <!-- アイコン画像 -->
-        <p>このプロジェクトでは、MFCC音声特徴量を用いてうつ病を予測する多層パーセプトロン（MLP）を開発しました。プロジェクトで使用したコードの詳細をJupyter Notebookで確認できます</p>
-    </section>
+        <section id="contact" class="center-content">
+            <h2>Contact</h2>
+            <div class="social-icons">
+                <a href="mailto:sayasi11235@gmail.com"><img src="mail-icon.png" alt="Email"></a>
+                <a href="https://twitter.com/"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://github.com/"><img src="github-icon.png" alt="GitHub"></a>
+            </div>
+        </section>
+    </main>
 
-    <section id="contact">
-        <h2>コンタクト</h2>
-        <p>Email: sayasi11235@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/sayakoino">sayakoino</a></p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2024 Sayako Inoue. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>© 2024 Sayako Inoue</p>
+    </footer>
 </body>
 </html>
