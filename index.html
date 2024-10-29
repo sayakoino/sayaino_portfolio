@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- サイドバー -->
-    <aside class="sidebar">
-         <nav>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav>
             <ul class="nav-links">
-                 <li><a href="#profile">PROFILE</a></li>
-            　   <li><a href="#skill">SKILLS</a></li>
-            　   <li><a href="#works">WORKS</a></li>
-        　       <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#skill">SKILLS</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-    </aside>
+    </header>
+
+    <!-- サイドバー -->
+    <aside class="sidebar"></aside>
 
     <main>
         <div class="content-container">
             <section id="profile" class="center-content">
-                <img src="profile-pic.jpg" class="profile-image">
+                <img src="profile-pic.jpg" class="profile-image" alt="Profile Picture">
                 <h2>PROFILE</h2>
                 <p>横浜市立大学データサイエンス学部データサイエンス学科に在籍中の大学生です。主に医療分野診断の機械学習モデルの開発に関心があり、特にうつ病診断に関する研究を行っています。</p>
             </section>
 
             <section id="skill" class="center-content">
-                <h2>SKILL</h2>
+                <h2>SKILLS</h2>
                 <ul class="skills-list">
                     <li>Python</li>
                     <li>Data Analysis</li>
@@ -37,9 +40,9 @@
             </section>
 
             <section id="works" class="center-content">
-                <h2>WORK</h2>
+                <h2>WORKS</h2>
                 <ul>
-                    <li><a hred="https://github.com/sayaino_portfolio/portfolio/style.css">GitHubリポジトリ</a></li>
+                    <li><a href="https://github.com/sayaino_portfolio/portfolio/style.css">GitHubリポジトリ</a></li>
                 </ul>
                 <p>このプロジェクトでは、MFCC音声特徴量を用いてうつ病を予測する多層パーセプトロン（MLP）を開発しました。プロジェクトで使用したコードの詳細をJupyter Notebookで確認できます。</p>
             </section>
@@ -51,7 +54,8 @@
                     <a href="https://github.com/sayakoino"><img src="github-icon.png" alt="GitHub"></a>
                 </div>
             </section>
-     </main>
+        </div>
+    </main>
 
     <footer>
         <p>© 2024 Sayako Inoue</p>
